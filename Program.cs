@@ -23,7 +23,9 @@ class Program
             command.Connection = connection;
 
             CreateDB(command);
-            //AddSomeData(command); // добавление тестовых данных для работы приложения, совпадает с примером из ТЗ
+
+            //расскоменитровать перед первым запуском приложения для коррректной работы
+            AddSomeData(command); // добавление тестовых данных для работы приложения, совпадает с примером из ТЗ
 
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(str);
